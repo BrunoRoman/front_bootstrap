@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <link rel="stylesheet" href="..\css\estilos.css">
+</head>
+
+<body>
+
+    <table border="0" width="100%" cellpadding="10" cellspacing="10" class="menu">
+        <tr>
+            <td><a href="..\html\index.html"><img src="..\imagens\logo.png" width="220" height="80"></a></td>
+            <td>QUEM SOMOS</td>
+            <td>CURSOS ONLINE</td>
+            <td>GAMA EXPERIENCE</td>
+            <td>PARA EMPRESAS</td>
+            <td>CONTATO</td>
+            <td>CONTEÚDO</td>
+
+        </tr>
+    </table>
+    <form id="formulario_curso" method="GET">
+        <fieldset>
+            <legend>Preencha o Formulario</legend>
+            <label>Nome:</label><input type="text" name="nome" required class="campo_nome"><br><br>
+            <label>Email:</label><input type="email" name="email" required class="campo_email"><br><br>
+            <label>Senha:</label><input type="password" name="senha" required class="campo_senha"><br><br>
+            <label>Informe o Genero:</label>
+            <input type="radio" name="opcao" value="Feminino">Feminino
+            <input type="radio" name="opcao" value="Masculino">Masculino
+            <input type="radio" name="opcao" value="Outros">Outros<br><br>
+            <label>Escolha o curso que deseja fazer:</label>
+            <select required >
+                <option value=""></option>
+                <option value="XML">XML</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+            </select><br><br>
+            <label >Escolha o periodo que quer cursar</label>
+            <input type="checkbox" name="opc" value="manha">Manhã
+            <input type="checkbox" name="opc" value="tarde">Tarde
+            <input type="checkbox" name="opc" value="noite">Noite
+            <br><br>
+            <label>Mensagem</label><br><textarea name="mensagem" id="" cols="100" rows="10"></textarea><br><br>
+            <label>Anexar o comprovante de residencia:</label><br><input type="file" name="arquivo"><br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
